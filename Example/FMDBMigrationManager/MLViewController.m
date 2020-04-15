@@ -7,6 +7,7 @@
 //
 
 #import "MLViewController.h"
+#import <FMDBMigrationManager/FMDBMigrationManager.h>
 
 @interface MLViewController ()
 

@@ -63,10 +63,10 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B85B1A4790C3FCD8A9D6A7A6 /* Pods-FMDBMigrationManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMDBMigrationManager_Tests.release.xcconfig"; path = "Target Support Files/Pods-FMDBMigrationManager_Tests/Pods-FMDBMigrationManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BF05531B73CC3F732ED7BFB3 /* Pods-FMDBMigrationManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMDBMigrationManager_Example.release.xcconfig"; path = "Target Support Files/Pods-FMDBMigrationManager_Example/Pods-FMDBMigrationManager_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C7F66C7FDE4A77C68769A266 /* FMDBMigrationManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = FMDBMigrationManager.podspec; path = ../FMDBMigrationManager.podspec; sourceTree = "<group>"; };
+		C7F66C7FDE4A77C68769A266 /* FMDBMigrationManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FMDBMigrationManager.podspec; path = ../FMDBMigrationManager.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E2577B1C798DACD5415BDAF6 /* Pods_FMDBMigrationManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FMDBMigrationManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E768D0DC8ED607AC9B3AA10B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		FB593A8785A92B98D10D4A2E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E768D0DC8ED607AC9B3AA10B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		FB593A8785A92B98D10D4A2E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,6 @@
 				48DE19DFEC526013A80B511B /* Pods-FMDBMigrationManager_Tests.debug.xcconfig */,
 				B85B1A4790C3FCD8A9D6A7A6 /* Pods-FMDBMigrationManager_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -324,10 +324,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FMDBMigrationManager_Example/Pods-FMDBMigrationManager_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/FMDBMigrationManager/FMDBMigrationManager.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDBMigrationManager.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
